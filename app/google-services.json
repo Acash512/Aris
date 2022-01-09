@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "544080543521",
+    "project_id": "aris-664ba",
+    "storage_bucket": "aris-664ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544080543521:android:9c5dc1a5ad12910bd28860",
+        "android_client_info": {
+          "package_name": "com.acash.aris"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544080543521-7dkg44vstkbkps4c2j0ho1a17fef48e9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBAfQO6FieE3AfehBjy8jVbmw8UHtPjpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544080543521-7dkg44vstkbkps4c2j0ho1a17fef48e9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

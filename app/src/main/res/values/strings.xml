@@ -13,4 +13,8 @@
     <string name="full_name">Full Name</string>
     <string name="proceed">Proceed</string>
     <string name="get_started">Get Started</string>
+    <string name="your_daily_news_feed">Your Daily News Feed is here</string>
+    <string name="your_saved_posts">Your Saved Posts</string>
+    <string name="show_saved_posts">Show Saved Posts</string>
+    <string name="saved_posts">Saved Posts</string>
 </resources>

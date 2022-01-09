@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Aris</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome</string>
+    <string name="intro_description_1">Google Developers Student Club MAIT presents Aris. Your daily guide to new events and opportunities</string>
+    <string name="for_students">For Students</string>
+    <string name="intro_description_2">Get fastest updates on internships &amp; job opportunities. Participate in awesome events conducted by different clubs</string>
+    <string name="for_clubs">For Clubs</string>
+    <string name="intro_description_3">If you are a club and want to promote your events, then this is the right place for you.</string>
+    <string name="next">next</string>
+    <string name="thy_name">Thy Name</string>
+    <string name="full_name">Full Name</string>
+    <string name="proceed">Proceed</string>
+    <string name="get_started">Get Started</string>
+</resources>

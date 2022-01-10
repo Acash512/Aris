@@ -3,11 +3,17 @@ Often college students miss out on some amazing internships/job opportunities or
 And this lack of awareness can significantly impact their connections, network and professional as well as personal growth. There must be an efficient way to track these opportunities
 and make the best out of them rather than the traditional social media platforms which are spammed with unwanted messages.
 
-# Proposed Solution
+# Proposed Solution with Screenshots
 GDSC Mait presents Aris, a one of a kind news application, which specifically targets students of MAIT, to help them get the fastest updates of the events conducted by various clubs,
 internships & job opportunities and all kinds of other stuff that the they won't prefer to miss. The app shows daily feed fetched from a Firebase server and acts as the perfect platform 
 for clubs to promote their events or for college administration to share important information with the students. The posts can also be saved locally on the device to view them offline or simply
 track them better.
+
+|<img src="screenshots/img1.jpeg" width=200>|<img src="screenshots/img2.jpeg" width=200>|<img src="screenshots/img3.jpeg" width=200>|<img src="screenshots/img4.jpeg" width=200>|
+|---|---|---|---|
+
+|<img src="screenshots/img5.jpeg" width=200>|<img src="screenshots/img6.jpeg" width=200>|<img src="screenshots/img7.jpeg" width=200>|<img src="screenshots/img8.jpeg" width=200>|
+|---|---|---|---|
 
 # Functionality and Concepts Used
 The feed is fetched from a `Firestore` database and is updated directly from the console by an administrator or representative whenever required. `Room Database` has been employed to save 

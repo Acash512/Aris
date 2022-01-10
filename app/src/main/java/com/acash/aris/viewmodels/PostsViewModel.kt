@@ -1,13 +1,14 @@
 package com.acash.aris.viewmodels
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import androidx.lifecycle.*
+import com.acash.aris.database.SavedPostsDao
 import com.acash.aris.models.Post
+import com.acash.aris.models.PostEntity
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
+import kotlinx.coroutines.launch
 
-class DailyFeedViewModel: ViewModel() {
+class PostsViewModel(private val postsDao:SavedPostsDao): ViewModel() {
     private val _listPosts = MutableLiveData<MutableList<Post>>()
     val listPosts:LiveData<MutableList<Post>> = _listPosts
 
@@ -35,5 +36,31 @@ class DailyFeedViewModel: ViewModel() {
 
     fun showedErrorToast(){
         _failureStatus.value = false
+    }
+
+    fun savePost(postEntity: PostEntity) {
+        viewModelScope.launch {
+            postsDao.insertPost(postEntity)
+        }
+    }
+
+    fun removeSavedPost(postEntity: PostEntity){
+        viewModelScope.launch {
+            postsDao.deletePost(postEntity)
+        }
+    }
+
+    fun getSavedPostIds() = postsDao.fetchSavedPostsIds()
+
+    fun getAllSavedPosts() = postsDao.fetchAllSavedPosts()
+}
+
+class PostsViewModelFactory(private val postsDao: SavedPostsDao) : ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        if (modelClass.isAssignableFrom(PostsViewModel::class.java)) {
+            @Suppress("UNCHECKED_CAST")
+            return PostsViewModel(postsDao) as T
+        }
+        throw IllegalArgumentException("Unknown ViewModel class")
     }
 }

@@ -5,6 +5,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
+import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
@@ -16,7 +17,6 @@ private val Context.datastore: DataStore<Preferences> by preferencesDataStore(
 )
 
 class UserPreferencesDataStore(context: Context) {
-    private val USER_NAME = stringPreferencesKey("user_name")
 
     val userName: Flow<String> = context.datastore.data
         .map { preferences ->
@@ -27,5 +27,9 @@ class UserPreferencesDataStore(context: Context) {
         context.datastore.edit { preferences ->
             preferences[USER_NAME] = name
         }
+    }
+
+    companion object {
+        private val USER_NAME = stringPreferencesKey("user_name")
     }
 }

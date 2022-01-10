@@ -1,6 +1,6 @@
 package com.acash.aris.models
 
-import com.google.firebase.firestore.ServerTimestamp
+import com.google.firebase.Timestamp
 import java.util.*
 
 class Post(
@@ -9,8 +9,7 @@ class Post(
     val postImgUrl: String,
     val orgDpUrl: String,
     val postDescription: String,
-    @ServerTimestamp
-    val createdDate: Date?=null
+    val createdDate: Timestamp
 ) {
-    constructor() : this("", "", "", "", "",null)
+    constructor() : this("", "", "", "", "", Timestamp(Date()))
 }

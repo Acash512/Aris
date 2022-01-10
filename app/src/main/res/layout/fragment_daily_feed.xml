@@ -6,51 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".fragments.DailyFeedFragment">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingTop="15dp">
+        android:layout_above="@id/btnSavedPosts">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
-            android:fontFamily="@font/source_sans_pro"
-            android:text="@string/welcome"
-            android:textColor="@color/black"
-            android:textSize="26sp" />
-
-        <TextView
-            android:id="@+id/tvUserName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
-            android:fontFamily="@font/source_sans_pro"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            tools:text="Aakash Gupta" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/source_sans_pro"
-            android:text="@string/your_daily_news_feed"
-            android:textColor="@color/medium_grey"
-            android:textSize="18sp" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvDailyFeed"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/list_item_post" />
+            android:orientation="vertical"
+            android:paddingTop="15dp">
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:fontFamily="@font/source_sans_pro"
+                android:text="@string/welcome"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:fontFamily="@font/source_sans_pro"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="Aakash Gupta" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/source_sans_pro"
+                android:text="@string/your_daily_news_feed"
+                android:textColor="@color/medium_grey"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDailyFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/list_item_post" />
+        </LinearLayout>
+    </ScrollView>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSavedPosts"

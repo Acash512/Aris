@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Hp/AndroidStudioProjects/Aris/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/Hp/AndroidStudioProjects/Aris/app/src/main/res/drawable/ic_baseline_bookmark_border_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/Hp/AndroidStudioProjects/Aris/app/src/main/res/drawable/save_post_selector.xml" value="0.1125" />
         <entry key="..\:/Users/Hp/AndroidStudioProjects/Aris/app/src/main/res/font/.xml" value="0.234375" />
         <entry key="..\:/Users/Hp/AndroidStudioProjects/Aris/app/src/main/res/layout/activity_intro.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Hp/AndroidStudioProjects/Aris/app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -13,7 +16,7 @@
         <entry key="..\:/Users/Hp/AndroidStudioProjects/Aris/app/src/main/res/layout/fragment_intro2.xml" value="0.1" />
         <entry key="..\:/Users/Hp/AndroidStudioProjects/Aris/app/src/main/res/layout/fragment_intro3.xml" value="0.18" />
         <entry key="..\:/Users/Hp/AndroidStudioProjects/Aris/app/src/main/res/layout/fragment_saved_posts.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Hp/AndroidStudioProjects/Aris/app/src/main/res/layout/list_item_post.xml" value="0.33" />
+        <entry key="..\:/Users/Hp/AndroidStudioProjects/Aris/app/src/main/res/layout/list_item_post.xml" value="0.38823529411764707" />
       </map>
     </option>
   </component>
